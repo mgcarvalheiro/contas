@@ -2,14 +2,21 @@ package br.com.marcelocarvalheiro.contas.model;
 
 import java.util.Calendar;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Conta {
 	
 	private Long id;
 
+	@NotNull(message="{conta.formulario.descricao.obrigatoria}") 
+	@Size(min=5, message="{conta.formulario.descricao.tamanho}")
 	private String descricao;
 
 	private boolean paga;
 	
+	//@NotNull(message="{conta.formulario.valor.obrigatorio}") 
+	//@DecimalMin(value="0.01", message="{conta.formulario.valor.maior.zero}")
 	private double valor;
 
 	private Calendar dataPagamento;

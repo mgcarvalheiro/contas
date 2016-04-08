@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Contas à pagar/receber</title>
+<script src="resources/js/jquery.js"></script>
 </head>
 <body>
     <table style="height: 10px; width: 775px;" border="1">
@@ -17,6 +18,7 @@
         <th>Tipo</th>
         <th>Paga?</th>
         <th>Data de pagamento</th>
+        <th>Ações</th>
         </tr>
 
         <c:forEach items="${contas}" var="conta">
@@ -34,8 +36,33 @@
                 </c:if>
             </td>
             <td><fmt:formatDate value="${conta.dataPagamento.time}" pattern="dd/MM/yyyy"/></td>
+            <td>
+            	<a href="removeConta?id=${conta.id}">Excluir</a>
+            	
+            	<c:if test="${conta.paga eq false}">
+                   | <a href="#" onclick="pagarAgora(${conta.id});">Pagar</a>
+                </c:if>
+            	
+            </td>
         </tr>        
         </c:forEach>
     </table>
+    <br/>
+    <a href="efetuarLogout">Logout</a>
+    
+    <script type="text/javascript">
+    
+    	function deuCerto(DadosDaResposta) {
+    		alert("Conta paga com sucesso!");
+    	}
+    
+    	function pagarAgora(id) {
+    		//$.get("pagarConta?id="+id, deuCerto);
+    		$.post("pagarConta", {'id' : id}, function() {
+  			  $("#conta_"+id).html("Paga");
+  			});
+    	}
+    </script>
+    
 </body>
 </html>

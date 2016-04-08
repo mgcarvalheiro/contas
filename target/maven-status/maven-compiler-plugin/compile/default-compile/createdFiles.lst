@@ -1,9 +1,13 @@
+br/com/marcelocarvalheiro/contas/interceptor/AutorizadorInterceptor.class
 br/com/marcelocarvalheiro/contas/StringToEnumConverterFactory$StringToEnumConverter.class
 br/com/marcelocarvalheiro/contas/dao/ContaDAO.class
 br/com/marcelocarvalheiro/contas/controller/ContaController.class
-br/com/marcelocarvalheiro/contas/model/TipoDaConta.class
 br/com/marcelocarvalheiro/contas/StringToEnumConverterFactory.class
+br/com/marcelocarvalheiro/contas/controller/LoginController.class
 br/com/marcelocarvalheiro/contas/controller/OlaMundoSpringController.class
-br/com/marcelocarvalheiro/contas/controller/InfraController.class
 br/com/marcelocarvalheiro/contas/ConnectionFactory.class
+br/com/marcelocarvalheiro/contas/dao/UsuarioDAO.class
+br/com/marcelocarvalheiro/contas/model/Usuario.class
+br/com/marcelocarvalheiro/contas/model/TipoDaConta.class
+br/com/marcelocarvalheiro/contas/controller/InfraController.class
 br/com/marcelocarvalheiro/contas/model/Conta.class

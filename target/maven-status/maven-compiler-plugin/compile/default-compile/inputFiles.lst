@@ -1,8 +1,12 @@
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/controller/ContaController.java
+/home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/dao/UsuarioDAO.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/dao/ContaDAO.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/controller/InfraController.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/ConnectionFactory.java
+/home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/model/Usuario.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/controller/OlaMundoSpringController.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/StringToEnumConverterFactory.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/model/Conta.java
 /home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/model/TipoDaConta.java
+/home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/controller/LoginController.java
+/home/marcelo/workspace/contas/src/br/com/marcelocarvalheiro/contas/interceptor/AutorizadorInterceptor.java
